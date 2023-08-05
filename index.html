@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: row; text-align: left;">
+    
+    <div class="container" >
+            <h1>Registration Form</h1>
+            <form id="registrationForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input style="margin-left: 103px;" type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="image-link">Image Link:</label>
+                    <input style="margin-left: 65px;" type="image-link" id="image-link" required>
+                </div>
+                <div>
+                    <label for="website">Website:</label>
+                    <input type="website" style="margin-left: 87px;" id="website" required>
+                </div>
+
+                <div style="padding-top: 20px; display: flex; text-align: center; ">
+                    <label for="gender" style="padding-left:25px ;">Gender: </label>
+                    <div class="containers"
+                        style=" margin-top: 0px; border: 0px;  padding-left: 20px; padding-top: 10px;">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+
+                        <input type="radio" id="female" name="gender" value="female" style="margin-left:118px ;">
+                        <label for="female">Female</label><br>
+                    </div>
+                </div>
+
+                <div style="padding-top: 20px; display: flex; text-align: left; ">
+                    <label for="gender" style="padding-left:40px ;">Skills: </label>
+                    <div class="containers"
+                        style=" margin-top: 0px; border: 0px;  padding-left: 40px; padding-top: 10px;">
+                        <input type="checkbox" id="javascript" name="language" value="JavaScript">
+                        <label for="javascript">JavaScript</label><br>
+
+                        <input type="checkbox" id="python" name="language" value="Python">
+                        <label for="python">Python</label><br>
+
+                        <input type="checkbox" id="java" name="language" value="Java">
+                        <label for="java">Java</label><br>
+
+                        <input type="checkbox" id="cpp" name="language" value="C++">
+                        <label for="cpp">C++</label><br>
+                    </div>
+                </div>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div class="container2" id="output" style=" margin-top: 60px;"></div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
